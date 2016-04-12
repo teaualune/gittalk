@@ -1,2 +1,5 @@
 /* global Reveal */
-Reveal.initialize();
+Reveal.initialize({
+    history: true,
+    slideNumber: true
+});

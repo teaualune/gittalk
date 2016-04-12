@@ -1,6 +1,6 @@
 section
     h1 Git 程式碼版本控制與協作開發
-    h3 Mar. 16, 2016 | NTU Garage
+    h3 Apr. 12, 2016 | CSIE
     p
         | 曾台綸
         | &nbsp;
@@ -99,7 +99,7 @@ section
         li Repository
         li Commit
         li Branch
-        //- li Blob &amp; Tree
+        li Blob &amp; Tree
         li Tag
     td: ul
         li 分支合併與衝突
@@ -127,9 +127,13 @@ section
             code master
         li 開發時能隨意的建立、切換、合併分支來幫助開發
     img(src="images/intro_branch.png")
-//- section
+section
     h3 Blob
+    p git 內部實際儲存管理內容的二進位檔
     h3 Tree
+    ul
+        li 用來呈現資料夾的資料結構
+        li 和 commit、blob 結合變成完整的樹狀構造
 section
     section
         h2 Tag 標籤
@@ -141,10 +145,15 @@ section
         h2 HEAD
         ul
             li 一種特殊的標籤，指向目前位於哪一個 commit
-            li 電腦資料夾內的檔案狀態會呈現此 commit 的內容
+            li 電腦資料夾內的檔案狀態會呈現此 commit 的內容（working directory）
             li 通常會都是指向某個分支的最尾端
             li 如果和分支脫節了，則被稱為 detached 狀態
         img(src="images/intro_head.png")
+section
+    h3 git 完整構造
+    section: img(style="height:100%;", src="images/git_model.png")
+    section: img(style="height:100%;", src="images/git_model_example.png")
+    section: img(style="height:100%;", src="images/git_model_example2.png")
 
 section
     h2 分支合併
@@ -490,7 +499,14 @@ section
     section: img(src="images/after-pull-rebase.png")
 
 section
-    h1 Thank You!
-    p
-        | Presentation source:&nbsp;
-        a(href="https://github.com/teaualune/gittalk", target="_blank") https://github.com/teaualune/gittalk
+    h2 Dive into Git
+    p: a(href="https://github.com/git/git", target="_blank") https://github.com/git/git
+section
+    section: h2 Thank You!
+    section
+        h3 References
+        ul
+            li: a(href="https://git-scm.com/book/en/v1/Git-Internals", target="_blank") Git Internals
+            li
+                | Presentation source:&nbsp;
+                a(href="https://github.com/teaualune/gittalk", target="_blank") https://github.com/teaualune/gittalk
